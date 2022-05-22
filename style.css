@@ -223,7 +223,7 @@ h3 {
 	position: absolute;
 	content: '';
 	width: 50px;
-	height: 2px;
+	height: 1px;
 	background: rgba(60, 101, 133, 0.8);
 	left: 110%;
 	top: 50%;
@@ -233,7 +233,7 @@ h3 {
 	position: absolute;
 	content: '';
 	width: 50px;
-	height: 2px;
+	height: 1px;
 	background: rgba(60, 101, 133, 0.8);
 	right: 110%;
 	top: 50%;
@@ -244,6 +244,7 @@ h3 {
 	display: flex;
 	align-items: center;
 	font-family: 'good-vibes';
+	
 }
 
 span {
@@ -275,10 +276,17 @@ span {
 	.of-style {
 		font-size: 25px;
 		margin-top: 0;
-		margin: -10px;
+		margin: 5px 0;
+		width: 83px;
+    		height: 35px;
+		display: flex;
+		align-items: center;
 	}
 	.names {
 		font-size: 35px;
+		width: 255px;
+		overflow: hidden;
+		height: 50px;
 	}
 	.date {
 		font-size: 20px;
