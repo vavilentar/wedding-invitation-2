@@ -41,10 +41,14 @@
 
 @keyframes bg-fade-out {
 	from {
+	width: 1px;
+
 		opacity: 0;
 	}
 
 	to {
+	width: 550px;
+
 		opacity: 1;
 	}
 }
