@@ -195,6 +195,7 @@ h1 {
 	animation: text-fade-out ease-in-out 1s;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
+	overflow: visible;
 }
 
 h2,
@@ -206,6 +207,8 @@ h3 {
 	animation: text-fade-out ease-in-out 1s;
 	animation-delay: 1.2s;
 	animation-fill-mode: forwards;
+	overflow: visible;
+
 }
 
 .of-style {
@@ -271,7 +274,8 @@ span {
 	}
 	.of-style {
 		font-size: 25px;
-		line-height: 18px;
+		margin-top: 0;
+		margin: -10px;
 	}
 	.names {
 		font-size: 35px;
