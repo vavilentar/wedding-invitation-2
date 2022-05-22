@@ -52,3 +52,17 @@
 		opacity: 1;
 	}
 }
+
+@keyframes bg-phone-fade-out {
+	from {
+	width: 1px;
+
+		opacity: 0;
+	}
+
+	to {
+	width: 400px;
+
+		opacity: 1;
+	}
+}

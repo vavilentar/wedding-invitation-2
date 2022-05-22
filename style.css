@@ -257,6 +257,9 @@ span {
 		width: 400px;
 		height: 700px;
 		transform: translateY(10px);
+		animation: bg-phone-fade-out ease-out 1s;
+		animation-delay: .5s;
+		animation-fill-mode: forwards;
 	}
 	.header {
 		margin-top: 130px;
