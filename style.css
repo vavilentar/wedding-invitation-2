@@ -3,6 +3,11 @@
 
 /*General styles*/
 
+@font-face {
+	font-family: 'good-vibes';
+	src: url(./good-vibes.ttf);
+}
+
 *,
 *::before,
 *::after {
@@ -183,7 +188,7 @@ span {
 
 h1 {
 	opacity: 0;
-	font-family: 'Great vibes';
+	font-family: 'good-vibes';
 	font-size: 86px;
 	line-height: 60px;
 	color: rgba(60, 101, 133, 0.8);
@@ -205,7 +210,10 @@ h3 {
 
 .of-style {
 	position: relative;
-	line-height: 15px;
+	line-height: 40px;
+	font-family: 'good-vibes';
+	font-size: 35px;
+	margin-top: 10px;
 }
 
 .of-style::after {
@@ -214,7 +222,7 @@ h3 {
 	width: 50px;
 	height: 2px;
 	background: rgba(60, 101, 133, 0.8);
-	left: 25px;
+	left: 110%;
 	top: 50%;
 }
 
@@ -224,15 +232,15 @@ h3 {
 	width: 50px;
 	height: 2px;
 	background: rgba(60, 101, 133, 0.8);
-	right: 25px;
+	right: 110%;
 	top: 50%;
-	z-index: -2;
 }
 
 .names {
-	font-size: 35px;
+	font-size:45px;
 	display: flex;
 	align-items: center;
+	font-family: 'good-vibes';
 }
 
 span {
@@ -256,6 +264,20 @@ span {
 	.square-2{
 		height: 300px;
 		width: 300px;
+	}
+
+	.invite-text{
+		font-size: 55px;
+	}
+	.of-style {
+		font-size: 25px;
+		line-height: 18px;
+	}
+	.names {
+		font-size: 35px;
+	}
+	.date {
+		font-size: 20px;
 	}
 }
 
