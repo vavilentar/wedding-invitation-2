@@ -1,0 +1,68 @@
+@keyframes text-fades {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes square-fade-out {
+	from {
+		opacity: 0;
+		transform: translate3d(-50%, -50%, 0) rotate(45deg);
+
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(-50%, -50%, 0) rotate(52deg);
+	}
+}
+
+@keyframes sec-square-fade-out {
+	from {
+		opacity: 0;
+		transform: translate3d(-50%, -50%, 0) rotate(45deg);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(-50%, -50%, 0) rotate(37deg);
+	}
+}
+
+@keyframes text-fade-out {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes bg-fade-out {
+	from {
+	width: 1px;
+
+		opacity: 0;
+	}
+
+	to {
+	width: 550px;
+
+		opacity: 1;
+	}
+}
+
+@keyframes bg-phone-fade-out {
+	from {
+	width: 1px;
+
+		opacity: 0;
+	}
+
+	to {
+	width: 400px;
+
+		opacity: 1;
+	}
+}

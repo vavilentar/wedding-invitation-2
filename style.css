@@ -1,0 +1,301 @@
+/*Imports*/
+@import url(./animations.css);
+
+/*General styles*/
+
+@font-face {
+	font-family: 'good-vibes';
+	src: url(./good-vibes.ttf);
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+body,
+html {
+	scroll-behavior: smooth;
+}
+
+/*Other styles*/
+
+.invitation {
+	opacity: 0;
+	transform: translateY(20px);
+	position: relative;
+	width: 550px;
+	height: 830px;
+	/* border: 2px solid rgba(0, 0, 0, 0.212); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	background-image: url(./invite-bg.png);
+	background-size: cover;
+	background-color: rgba(240, 235, 255, 0.562);
+	overflow: hidden;
+	animation: bg-fade-out ease-out 1s;
+	animation-delay: .5s;
+	animation-fill-mode: forwards;
+}
+/* 
+.header {
+	margin-top: 100px;
+}
+
+h1, h3 {
+	opacity: 0;
+	font-family: 'Great vibes';
+	color:rgb(60, 101, 133);
+	animation: text-fades ease-out 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+.wedding-text {
+	font-size: 60px;
+}
+
+h3 {
+	font-size: 35px;
+}
+
+h2 {
+	opacity: 0;
+	font-family: 'Noto serif';
+	font-size: 35px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+	color:rgb(60, 101, 133);
+	animation: text-fades ease-out 1s;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+}
+
+.adress {
+	opacity: 0;
+	font-family: 'Noto serif';
+	text-align: center;
+	color:rgb(60, 101, 133);
+	text-transform:uppercase;
+	line-height: 20px;
+	animation: text-fades ease-out 1s;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+span {
+	font-family: 'Great vibes';
+	text-transform: none;
+}
+
+.names {
+	margin: 20px 0 40px 0;
+}
+ */
+.adress {
+	position: absolute;
+	opacity: 0;
+	font-family: 'Noto serif';
+	text-align: center;
+	color:rgb(60, 101, 133);
+	text-transform:uppercase;
+	line-height: 20px;
+	animation: text-fades ease-out 1s;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+	bottom: 20px;
+}
+.flowers {
+	opacity: 0;
+	position: absolute;
+	top: -90px;
+	transform:rotate(180deg);
+	z-index: 1;
+	width: 600px;
+	animation: text-fades ease-out 1s;
+	animation-delay: .7s;
+	animation-fill-mode: forwards;
+}
+.square-1 {
+	opacity: 0;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	border: 2px solid rgba(60, 101, 133, 0.4);
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0) rotate(52deg);
+	animation: square-fade-out ease-out 2s;
+	animation-delay: 1s;
+	animation-fill-mode:forwards;
+}
+
+.square-2 {
+	opacity: 0;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	border: 2px solid rgba(60, 101, 133, 0.4);
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0) rotate(37deg);
+	animation: sec-square-fade-out ease-out 2s;
+	animation-delay: 1s;
+	animation-fill-mode:forwards;
+
+}
+
+h1 {
+	opacity: 0;
+	font-family: 'good-vibes';
+	font-size: 86px;
+	line-height: 60px;
+	color: rgba(60, 101, 133, 0.8);
+	animation: text-fade-out ease-in-out 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	overflow: visible;
+}
+
+h2,
+h3 {
+	opacity: 0;
+	font-family: 'Lobster two';
+	font-size: 26px;
+	color: rgba(60, 101, 133, 0.8);
+	animation: text-fade-out ease-in-out 1s;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;
+	overflow: visible;
+
+}
+
+.of-style {
+	position: relative;
+	line-height: 40px;
+	font-family: 'good-vibes';
+	font-size: 35px;
+	margin-top: 10px;
+}
+
+.of-style::after {
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 1px;
+	background: rgba(60, 101, 133, 0.8);
+	left: 110%;
+	top: 50%;
+}
+
+.of-style::before {
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 1px;
+	background: rgba(60, 101, 133, 0.8);
+	right: 110%;
+	top: 50%;
+}
+
+.names {
+	font-size:45px;
+	display: flex;
+	align-items: center;
+	font-family: 'good-vibes';
+	
+}
+
+span {
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+@media (max-width: 426px) {
+	.invitation {
+		width: 400px;
+		height: 700px;
+		transform: translateY(10px);
+		animation: bg-phone-fade-out ease-out 1s;
+		animation-delay: .5s;
+		animation-fill-mode: forwards;
+	}
+	.header {
+		margin-top: 130px;
+	}
+	.square-1 {
+		height: 300px;
+		width: 300px;
+	}
+	.square-2{
+		height: 300px;
+		width: 300px;
+	}
+
+	.invite-text{
+		font-size: 55px;
+		width: 275px;
+    height: 55px;
+	}
+	.of-style {
+		font-size: 25px;
+		margin-top: 0;
+		margin: 3px 0;
+		width: 83px;
+    		height: 35px;
+		display: flex;
+		align-items: center;
+	}
+	.names {
+		font-size: 35px;
+		width: 255px;
+		overflow: hidden;
+		height: 50px;
+	}
+	.date {
+		font-size: 20px;
+	}
+}
+
